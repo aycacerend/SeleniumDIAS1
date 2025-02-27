@@ -1,0 +1,7 @@
+<suite name="Hepsiburada UI Test Suite" parallel="tests" thread-count="2">
+    <test name="Hepsiburada Cucumber Tests">
+        <classes>
+            <class name="com.hepsiburada.tests.TestRunner"/>
+        </classes>
+    </test>
+</suite>
