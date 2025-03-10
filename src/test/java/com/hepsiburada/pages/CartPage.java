@@ -5,8 +5,8 @@ import org.openqa.selenium.WebDriver;
 
 public class CartPage extends BasePage {
 
-    // Örnek locator; sepetteki ürün fiyatını bulmak için kullanılır.
-    private By cartProductPriceLocator = By.xpath("//span[@class='cart-price']");
+
+    private By cartProductPriceLocator = By.xpath("///*[@id=\"365ec857-923a-4e8b-903a-6ed5ea22f74a\"]/div[1]/div[2]/div[2]/div[2]/div[2]/div[2]/div[2]");
 
     public CartPage(WebDriver driver) {
         super(driver);

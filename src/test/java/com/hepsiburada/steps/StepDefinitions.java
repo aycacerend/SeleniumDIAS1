@@ -59,7 +59,7 @@ public class StepDefinitions {
 
     @When("Kullanıcı sepete giderek sepetteki ürün fiyatını kontrol eder")
     public void kullanici_sepete_giderek_sepetteki_urun_fiyatini_kontrol_eder() {
-        // Sepet sayfasına geçiş işlemi burada yapılır.
+
         cartPage = new CartPage(driver);
     }
 

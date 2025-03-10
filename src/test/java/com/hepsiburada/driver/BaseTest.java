@@ -1,5 +1,5 @@
 package com.hepsiburada.driver;
-
+import com.hepsiburada.pages.BasePage;
 import org.junit.After;
 import org.junit.Before;
 import org.openqa.selenium.WebDriver;
@@ -16,26 +16,25 @@ public class BaseTest {
     public void setUp() {
         System.out.println("Test Başladı");
 
-        // Selenium Manager'ı devre dışı bırakıyoruz.
+
         System.setProperty("selenium.manager", "false");
 
-        // ChromeDriver'ın yolunu manuel olarak belirtiyoruz.
-        // Bu yol, projenizin kök dizininden itibaren veya absolute path olabilir.
-        System.setProperty("webdriver.chrome.driver", "src/test/resources/chromedriver");
 
-        // ChromeOptions ile gerekli argümanları ekliyoruz.
+        System.setProperty("webdriver.chrome.driver", "src/test/resources/chromedriver");
+        //WebDriver driver = new ChromeDriver();
+
         ChromeOptions options = new ChromeOptions();
-        options.addArguments("--remote-allow-origins=*");
+        //options.addArguments("--remote-allow-origins=*");
         options.addArguments("disable-translate");
         options.addArguments("disable-popup-blocking");
         options.addArguments("--disable-notifications");
 
         DesiredCapabilities caps = new DesiredCapabilities();
         caps.setCapability("browserName", "chrome");
-        //caps.setCapability("browserName","firefox");
+        caps.setCapability("browserName","firefox");
 
-        // Mac ortamı için platform adını "mac" veya "macOS" olarak belirtebilirsiniz
-        caps.setCapability("platformName", "mac");
+
+        caps.setCapability("platformName", "macOS");
 
 
         // ChromeDriver'ı oluşturuyoruz.

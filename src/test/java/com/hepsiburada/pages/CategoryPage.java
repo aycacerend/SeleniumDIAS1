@@ -6,9 +6,9 @@ import org.openqa.selenium.WebDriver;
 public class CategoryPage extends BasePage {
 
     // Örnek locatorlar; gerçek uygulamaya göre güncellenmelidir.
-    private By appleBrandFilter = By.xpath("//span[text()='Apple']");
-    private By screenSizeFilter = By.xpath("//span[text()='13,2 inç']");
-    private By highestPriceProduct = By.xpath("(//div[@data-test-id='product-card']//a)[last()]");
+    private By appleBrandFilter = By.xpath("//*[@id=\"HeroFilter_6d0fda08-a4b9-43ea-d0fe-074da0774e79\"]/div/div/div[2]/div/div[2]/div[2]/a/span");
+    private By screenSizeFilter = By.xpath("//*[@id=\"HeroFilter_6d0fda08-a4b9-43ea-d0fe-074da0774e79\"]/div/div/div[2]/div/div[2]/div[1]/a/span");
+    private By highestPriceProduct = By.xpath("//*[@id=\"i11\"]/div/a/div[2]/div[2]/h3");
 
     public CategoryPage(WebDriver driver) {
         super(driver);
