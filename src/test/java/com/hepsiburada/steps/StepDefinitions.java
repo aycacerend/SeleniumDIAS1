@@ -1,12 +1,13 @@
 package com.hepsiburada.steps;
 
+import com.hepsiburada.driver.BaseTest;
 import com.hepsiburada.pages.*;
 import io.cucumber.java.en.*;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
 
-public class StepDefinitions {
+public class StepDefinitions extends BaseTest {
 
     WebDriver driver;
     HomePage homePage;

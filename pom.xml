@@ -45,6 +45,12 @@
       <version>4.10.0</version>
     </dependency>
 
+    <dependency>
+      <groupId>io.github.bonigarcia</groupId>
+      <artifactId>webdrivermanager</artifactId>
+      <version>5.0.0</version>
+    </dependency>
+
     <!-- JUnit Dependency -->
     <dependency>
       <groupId>org.junit.jupiter</groupId>
